@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "model-human": "ts-node ./src/human/interact.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
