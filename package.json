@@ -7,7 +7,7 @@
     "model-human": "ts-node ./src/human/interact.ts",
     "model-animal": "ts-node ./src/animal/interact.ts",
     "model-plant": "ts-node ./src/plant/interact.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "model-zombie": "ts-node ./src/zombie/interact.ts"
   },
   "keywords": [],
   "author": "",
