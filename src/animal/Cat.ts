@@ -14,4 +14,8 @@ export class Cat extends Animal {
         console.error('Meow meow');
     }
 
+    purr(): void {
+        console.error("Purr purr");
+    }
+
 }
