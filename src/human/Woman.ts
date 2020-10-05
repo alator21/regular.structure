@@ -1,10 +1,12 @@
-import {Human} from "./Human";
-import {Sex} from "./Sex";
+import {Human} from "./Human"
+import { Gender } from './Gender'
 
 export class Woman extends Human {
     protected constructor(name: string[], surname: string[]) {
         super(name, surname);
     }
+
+    
 
     static create(name: string[], surname: string[]): Woman {
         return new Woman(name, surname);
@@ -22,7 +24,8 @@ export class Woman extends Human {
         console.log(`Oh oh hello^^`);
     }
 
-    sex(): Sex {
-        return Sex.FEMALE;
+    GetGender(): Gender {
+        return Gender.FEMALE;
     }
+
 }
