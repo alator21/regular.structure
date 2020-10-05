@@ -1,5 +1,5 @@
 import {Human} from "./Human";
-import {Sex} from "./Sex";
+import { Gender } from './Gender'
 
 export class Man extends Human {
     protected constructor(name: string[], surname: string[]) {
@@ -22,7 +22,7 @@ export class Man extends Human {
         console.log(`Ugh Ugh hey:)`);
     }
 
-    sex(): Sex {
-        return Sex.MALE;
+    GetGender(): Gender {
+        return Gender.MALE;
     }
 }

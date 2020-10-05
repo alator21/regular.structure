@@ -1,6 +1,5 @@
-import {Sex} from "../human/Sex";
-
 export abstract class Animal {
+
     private readonly _height: number;
     private _runningSpeedPerKm: number;
 
