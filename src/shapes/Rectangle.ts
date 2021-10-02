@@ -1,12 +1,13 @@
 import {Shape} from "./Shape";
+import {Point} from "./Point";
 
 export class Rectangle extends Shape {
-	private readonly _topLeftCorner: [x: number, y: number];
+	private readonly _topLeftCorner: Point;
 	private readonly _width: number;
 	private readonly _height: number;
 
 
-	constructor(topLeftCorner: [x: number, y: number], width: number, height: number) {
+	constructor(topLeftCorner: Point, width: number, height: number) {
 		super();
 		this._topLeftCorner = topLeftCorner;
 		this._width = width;
@@ -14,7 +15,7 @@ export class Rectangle extends Shape {
 	}
 
 
-	get topLeftCorner(): [x: number, y: number] {
+	get topLeftCorner(): Point {
 		return this._topLeftCorner;
 	}
 
