@@ -2,12 +2,12 @@ import {Human} from "./Human";
 import {Sex} from "./Sex";
 
 export class Man extends Human {
-    protected constructor(name: string[], surname: string[]) {
-        super(name, surname);
+    protected constructor(name: string[], surname: string[], sex: Sex) {
+        super(name, surname, sex);
     }
 
-    static create(name: string[], surname: string[]): Man {
-        return new Man(name, surname);
+    static create(name: string[], surname: string[],  sex: Sex): Man {
+        return new Man(name, surname, sex);
     }
 
     doSomeAwesomeManThings(): void {
@@ -20,9 +20,5 @@ export class Man extends Human {
 
     greet(): void {
         console.log(`Ugh Ugh hey:)`);
-    }
-
-    sex(): Sex {
-        return Sex.MALE;
     }
 }
