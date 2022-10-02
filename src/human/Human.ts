@@ -3,11 +3,13 @@ import {Sex} from "./Sex";
 export abstract class Human {
     private _name: string[];
     private _surname: string[];
+    private _sex: Sex
 
 
-    protected constructor(name: string[], surname: string[]) {
+    protected constructor(name: string[], surname: string[], sex: Sex) {
         this._name = name;
         this._surname = surname;
+        this._sex = sex;
     }
 
 
@@ -22,8 +24,6 @@ export abstract class Human {
 
     abstract greet(): void;
 
-    abstract sex(): Sex;
-
 
     get name(): string[] {
         return this._name;
@@ -33,7 +33,11 @@ export abstract class Human {
         return this._surname;
     }
 
+    get sex(): Sex {
+      return this._sex
+    }
+
     printDetails(): void {
-        console.table({'name': this._name.join(','), 'surname': this._surname.join(','), 'sex': Sex[this.sex()]});
+        console.table({'name': this._name.join(','), 'surname': this._surname.join(','), 'sex': Sex[this._sex]});
     }
 }
