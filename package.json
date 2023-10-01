@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "model-human": "ts-node ./src/human/interact.ts",
-    "model-animal": "ts-node ./src/animal/interact.ts",
-    "model-plant": "ts-node ./src/plant/interact.ts",
-    "model-zombie": "ts-node ./src/zombie/interact.ts",
-    "model-sport": "ts-node ./src/sport/interact.ts",
-    "model-music": "ts-node ./src/music/interact.ts"
+    "model-human": "bun ./src/human/interact.ts",
+    "model-animal": "bun ./src/animal/interact.ts",
+    "model-plant": "bun ./src/plant/interact.ts",
+    "model-zombie": "bun ./src/zombie/interact.ts",
+    "model-sport": "bun ./src/sport/interact.ts",
+    "model-music": "bun ./src/music/interact.ts"
   },
   "keywords": [],
   "author": "",
