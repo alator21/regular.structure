@@ -1,13 +1,14 @@
-import {Animal} from "./Animal";
+import { Sex } from "../human/Sex";
+import { Animal } from "./Animal";
 
 export class Cheetah extends Animal {
 
-    private constructor(height: number, weight: number, runningSpeedPerKm: number) {
-        super(height, weight, runningSpeedPerKm);
+    private constructor(sex: Sex, height: number, weight: number, runningSpeedPerKm: number) {
+        super(sex, height, weight, runningSpeedPerKm);
     }
 
-    static create(height: number, weight: number, runningSpeedPerKm: number): Cheetah {
-        return new Cheetah(height, weight, runningSpeedPerKm);
+    static create(sex: Sex, height: number, weight: number, runningSpeedPerKm: number): Cheetah {
+        return new Cheetah(sex, height, weight, runningSpeedPerKm);
     }
 
     communicate(): void {
