@@ -1,5 +1,6 @@
-import {Giraffe} from "./Giraffe";
+import { Sex } from "../human/Sex";
+import { Giraffe } from "./Giraffe";
 
-let giraffe:Giraffe = Giraffe.create(610, 810);
+const giraffe: Giraffe = Giraffe.create(Sex.MALE, 610, 810);
 giraffe.printDetails();
 giraffe.communicate();

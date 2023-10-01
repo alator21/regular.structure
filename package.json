@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint":"bunx eslint . --fix",
     "model-human": "bun ./src/human/interact.ts",
     "model-animal": "bun ./src/animal/interact.ts",
     "model-plant": "bun ./src/plant/interact.ts",

@@ -1,7 +1,7 @@
 import {Man} from "./Man";
 
 
-let man:Man = Man.create(['John'],['Garrett']);
+const man:Man = Man.create(['John'],['Garrett']);
 man.greet();
 man.doSomeAwesomeManThings()
 man.printDetails();
