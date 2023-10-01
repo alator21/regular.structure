@@ -1,14 +1,15 @@
-import {Animal} from "./Animal";
+import { Sex } from "../human/Sex";
+import { Animal } from "./Animal";
 
 export class Giraffe extends Animal {
     private static readonly INITIAL_SPEED = 10;
 
-    private constructor(height: number, weight: number, runningSpeedPerKm: number) {
-        super(height, weight, runningSpeedPerKm);
+    private constructor(sex: Sex, height: number, weight: number, runningSpeedPerKm: number) {
+        super(sex, height, weight, runningSpeedPerKm);
     }
 
-    static create(height: number, weight: number): Giraffe {
-        return new Giraffe(height, weight, Giraffe.INITIAL_SPEED);
+    static create(sex: Sex, height: number, weight: number): Giraffe {
+        return new Giraffe(sex, height, weight, Giraffe.INITIAL_SPEED);
     }
 
     communicate(): void {
