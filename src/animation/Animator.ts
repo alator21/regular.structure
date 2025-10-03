@@ -1,9 +1,10 @@
 import { Animation } from "./Animation";
 
 export class Animator {
-    static async play(animation: Animation): Promise<void> {
+    static async play(animation: Animation, maxLoops: number = Infinity): Promise<void> {
         const frames = animation.frames;
         const loop = animation.loop;
+        let loopCount = 0;
 
         do {
             for (const frame of frames) {
@@ -11,7 +12,8 @@ export class Animator {
                 this.renderFrame(frame.content);
                 await this.sleep(frame.durationMs);
             }
-        } while (loop);
+            loopCount++;
+        } while (loop && loopCount < maxLoops);
     }
 
     private static clearScreen(): void {
