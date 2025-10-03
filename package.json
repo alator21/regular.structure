@@ -11,7 +11,8 @@
     "model-plant": "bun ./src/plant/interact.ts",
     "model-zombie": "bun ./src/zombie/interact.ts",
     "model-sport": "bun ./src/sport/interact.ts",
-    "model-music": "bun ./src/music/interact.ts"
+    "model-music": "bun ./src/music/interact.ts",
+    "model-shapes": "bun ./src/shapes/interact.ts"
   },
   "keywords": [],
   "author": "",
